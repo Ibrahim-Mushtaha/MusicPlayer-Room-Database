@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="Song"
+            type="com.ix.ibrahim7.mediaplayer.model.SongModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.6dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/allCard">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+
+            <ImageView
+                android:id="@+id/tv_song_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                app:roundedCorners="topRight|bottomRight"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_song_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="14sp"
+                android:text="@{Song.title}"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_song_image"
+                app:layout_constraintTop_toTopOf="@+id/tv_song_image" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="16sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="14sp"
+                android:text="@{Song.artistName}"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_song_image"
+                app:layout_constraintTop_toBottomOf="@+id/tv_song_name" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.6dp"
+                android:layout_alignStart="@id/txt2"
+                android:layout_marginEnd="16sp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:background="#33181B2C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

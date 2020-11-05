@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.HomeFragment"
+        android:label="Library"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.PlayerFragment"
+        tools:layout="@layout/fragment_player">
+        <argument
+            android:name="postion"
+            app:argType="string" />
+        <argument
+            android:name="song_array"
+            app:argType="com.ix.ibrahim7.mediaplayer.model.SongModel[]" />
+        <action
+            android:id="@+id/action_playerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.MainFragment"
+        android:label="All Songs"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_albumDetailsFragment"
+            app:destination="@id/albumDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.AlbumFragment"
+        android:label="fragment_album"
+        tools:layout="@layout/fragment_album" />
+    <fragment
+        android:id="@+id/songsFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.SongsFragment"
+        android:label="fragment_songs"
+        tools:layout="@layout/fragment_songs" />
+    <fragment
+        android:id="@+id/artistsFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.ArtistsFragment"
+        android:label="fragment_artists"
+        tools:layout="@layout/fragment_artists" />
+    <fragment
+        android:id="@+id/albumDetailsFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.AlbumDetailsFragment"
+        android:label="fragment_album_details"
+        tools:layout="@layout/fragment_album_details" />
+</navigation>
