@@ -6,6 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.ix.ibrahim7.mediaplayer.loader.SongDataLab
 import com.ix.ibrahim7.mediaplayer.model.SongModel
+import com.ix.ibrahim7.mediaplayer.repository.SongRepository
 import kotlinx.coroutines.*
 
 class SongViewModel(application: Application) : AndroidViewModel(application) {
@@ -16,6 +17,7 @@ class SongViewModel(application: Application) : AndroidViewModel(application) {
     val SongModelliveData: LiveData<ArrayList<SongModel>>
         get() = _SongModelLiveData
 
+    val repository= SongRepository(application)
 
     private var viewModelJob = Job()
     private val uiScope = CoroutineScope(Dispatchers.IO + viewModelJob)
@@ -33,6 +35,12 @@ class SongViewModel(application: Application) : AndroidViewModel(application) {
         return _SongModelLiveData.postValue(SongDataLab.get(application).songs as ArrayList<SongModel>?)
     }
 
+
+    fun addTofavorite(songModel: SongModel){
+        uiScope.launch {
+            repository.addToFavorite(songModel)
+        }
+    }
 
 }
 

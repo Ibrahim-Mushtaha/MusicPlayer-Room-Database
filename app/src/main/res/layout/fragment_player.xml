@@ -15,7 +15,7 @@
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
         app:behavior_hideable="true"
         android:background="@color/White"
-        tools:context=".ui.fragment.PlayerFragment">
+        tools:context=".ui.fragment.Home.PlayerFragment">
 
 
         <ImageView
@@ -65,6 +65,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintGuide_end="34dp" />
 
+
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="wrap_content"
@@ -78,6 +80,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"

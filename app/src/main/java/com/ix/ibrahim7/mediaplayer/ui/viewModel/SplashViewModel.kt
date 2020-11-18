@@ -15,7 +15,7 @@ class SplashViewModel(application: Application) : AndroidViewModel(application) 
 
     init {
         GlobalScope.launch {
-            delay(2000)
+            delay(2260)
             mutableLiveData.postValue(SplashState.MainActivity)
         }
     }

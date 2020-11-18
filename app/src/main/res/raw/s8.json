@@ -1,0 +1,601 @@
+{
+  "loc_p_124" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "19:41:51 14/10/2020",
+    "lat" : -6.763355,
+    "lng" : -79.8635933,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "DUVERLY QUEZADA BERMEO MOVIL 21",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_125" : {
+    "bearing" : -178.41921997070312,
+    "distancia" : 50.49235916137695,
+    "fechayhora" : "20:03:50 13/09/2020",
+    "lat" : -6.7700795,
+    "lng" : -79.8737956,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "MARIANO CHINCHAY LA RIVA  Movil 03",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_126" : {
+    "bearing" : 168.08164978027344,
+    "distancia" : 2.836960554122925,
+    "fechayhora" : "18:48:26 14/10/2020",
+    "lat" : -6.7902443,
+    "lng" : -79.8475815,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "EDGAR CAYOTOPA DIAZ MOVIL 69",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_127" : {
+    "bearing" : -65.92347717285156,
+    "distancia" : 1.8162500858306885,
+    "fechayhora" : "08:47:14 07/10/2020",
+    "lat" : -6.7664199,
+    "lng" : -79.8415447,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "FABIAN CHINCHAY LA RIVA MOVIL 67",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_130" : {
+    "bearing" : -88.94599914550781,
+    "distancia" : 4.809614181518555,
+    "fechayhora" : "14:01:39 11/09/2020",
+    "lat" : -6.775735,
+    "lng" : -79.8577517,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "HECTOR SEVERINO ARROYO MOVIL 15",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_134" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "11:12:13 17/08/2020",
+    "lat" : -6.1567339,
+    "lng" : -79.6905319,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "CARLOS ENEQUE CUEVA  MOVIL 42",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_135" : {
+    "bearing" : 85.91258239746094,
+    "distancia" : 0.6206080913543701,
+    "fechayhora" : "12:01:47 14/10/2020",
+    "lat" : -6.8026819,
+    "lng" : -79.8503662,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "PERCY CABALLERO FLORES  MOVIL 93",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_136" : {
+    "bearing" : -123.70030212402344,
+    "distancia" : 0.07972604781389236,
+    "fechayhora" : "07:23:50 12/08/2020",
+    "lat" : -6.7764094,
+    "lng" : -79.8827709,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "MERARDO TIQUILAHUANCA MOVIL 60",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_137" : {
+    "bearing" : 84.61798095703125,
+    "distancia" : 8.017495155334473,
+    "fechayhora" : "14:17:49 15/07/2020",
+    "lat" : -6.736345,
+    "lng" : -79.6307768,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "NICOLAS BUSTAMANTE ÑOPO MOVIL 01",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_140" : {
+    "bearing" : 1.4646822214126587,
+    "distancia" : 9.082382202148438,
+    "fechayhora" : "19:19:20 14/10/2020",
+    "lat" : -6.7685458,
+    "lng" : -79.8394914,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "JAIME AGUILAR GUEVARA MOVIL  40 ",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_141" : {
+    "bearing" : -14.223494529724121,
+    "distancia" : 3.1944386959075928,
+    "fechayhora" : "13:23:32 13/10/2020",
+    "lat" : -6.7729131,
+    "lng" : -79.8368987,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "MARINO  YGNACIO HERNANDEZ MOVIL 100",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_144" : {
+    "bearing" : 97.58064270019531,
+    "distancia" : 14.754083633422852,
+    "fechayhora" : "19:41:50 14/10/2020",
+    "lat" : -6.7840741,
+    "lng" : -79.8472233,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "RENE RUBIO  MOVIL 08",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_147" : {
+    "bearing" : 71.99761199951172,
+    "distancia" : 5.474798202514648,
+    "fechayhora" : "19:41:53 14/10/2020",
+    "lat" : -6.7755779,
+    "lng" : -79.8414822,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "OMAR SANDOVAL FARROÑAN  MOVIL 78",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_148" : {
+    "bearing" : 85.96086883544922,
+    "distancia" : 0.9420204162597656,
+    "fechayhora" : "19:41:54 14/10/2020",
+    "lat" : -6.7602665,
+    "lng" : -79.858585,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "ISIDRO BARRIOS NEIRA MOVIL 44",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_149" : {
+    "bearing" : 146.5867156982422,
+    "distancia" : 9.234358787536621,
+    "fechayhora" : "14:58:20 19/06/2020",
+    "lat" : -6.779992,
+    "lng" : -79.8447367,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "DENYS SANDOVAL FARROÑAN MOVIL  88",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_153" : {
+    "bearing" : -33.45931625366211,
+    "distancia" : 3.168121099472046,
+    "fechayhora" : "19:41:50 14/10/2020",
+    "lat" : -6.7528851,
+    "lng" : -79.8132154,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "IRVIN QUIROZ LEONARDO MOVIL 96",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_154" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "19:19:05 13/10/2020",
+    "lat" : -6.7704592,
+    "lng" : -79.8739156,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "JULIO GONZALEZ CELIS  MOVIL 06",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_156" : {
+    "bearing" : 130.61404418945312,
+    "distancia" : 0.1019323542714119,
+    "fechayhora" : "17:13:00 14/10/2020",
+    "lat" : -6.806721,
+    "lng" : -79.8492296,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "ANIBAL EFUS CORONEL  MOVIL 50",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_159" : {
+    "bearing" : -109.39234161376953,
+    "distancia" : 2.5313074588775635,
+    "fechayhora" : "19:41:34 14/10/2020",
+    "lat" : -6.7999587,
+    "lng" : -79.8453515,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "EDILBERTO TINEO LARA MOVIL 39",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_166" : {
+    "bearing" : 175.84912109375,
+    "distancia" : 4.734598636627197,
+    "fechayhora" : "18:31:49 23/06/2020",
+    "lat" : -6.7635266,
+    "lng" : -79.7999974,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "LUIS MANUEL CORREA CORREA MOVIL 34",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_169" : {
+    "bearing" : 0,
+    "distancia" : 0.044235870242118835,
+    "fechayhora" : "19:24:32 14/10/2020",
+    "lat" : -6.7633404,
+    "lng" : -79.8635403,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "JORGE FLORES ALVARADO MOVL 02",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_172" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "13:19:22 13/08/2020",
+    "lat" : -6.7860181,
+    "lng" : -79.8699034,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "EMILIANO HUANCAS ALVAREZ MOVIL 70",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_179" : {
+    "bearing" : 122.20618438720703,
+    "distancia" : 0.352746844291687,
+    "fechayhora" : "10:14:40 09/10/2020",
+    "lat" : -6.7848134,
+    "lng" : -79.8505777,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "CLODORINDO HEREDIA BECERRE  MOVIL 26",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_192" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "00:13:58 19/08/2020",
+    "lat" : -6.7581433,
+    "lng" : -79.8355196,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "jose augusto barrantes",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_202" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "19:41:50 14/10/2020",
+    "lat" : -6.7758691,
+    "lng" : -79.8661493,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "JORGE GONZALES CELIS MOVIL 28",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_209" : {
+    "bearing" : 20.44890022277832,
+    "distancia" : 1354.8685302734375,
+    "fechayhora" : "19:09:10 30/06/2020",
+    "lat" : -6.763238,
+    "lng" : -79.8638619,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "JORGE CAMPOS MOVIL  17",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_215" : {
+    "bearing" : -32.23985290527344,
+    "distancia" : 109.723876953125,
+    "fechayhora" : "19:41:54 14/10/2020",
+    "lat" : -6.7831344,
+    "lng" : -79.8705885,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "MIGUEL QUINTANA SANCHEZ MOVIL 37",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_216" : {
+    "bearing" : -122.1150131225586,
+    "distancia" : 42.811302185058594,
+    "fechayhora" : "19:41:51 14/10/2020",
+    "lat" : -6.7627633,
+    "lng" : -79.8628442,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "ANDERSON ARRIOLA CISNEROS MOVIL 54",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_223" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "19:41:54 14/10/2020",
+    "lat" : -6.7634195,
+    "lng" : -79.8233858,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "ROMEL ALCA CHACON MOVIL 10",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_225" : {
+    "bearing" : -119.09149169921875,
+    "distancia" : 121.68840789794922,
+    "fechayhora" : "19:41:52 14/10/2020",
+    "lat" : -6.7691481,
+    "lng" : -79.8746324,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "WILLIAM SEVERINO ARROYO MOVIL 48",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_227" : {
+    "bearing" : -173.30398559570312,
+    "distancia" : 13.083538055419922,
+    "fechayhora" : "19:41:49 14/10/2020",
+    "lat" : -6.7720525,
+    "lng" : -79.8361771,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "LUIS RUBIO MERA MOVIL 25",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_248" : {
+    "bearing" : 40.97996139526367,
+    "distancia" : 11.513967514038086,
+    "fechayhora" : "22:07:12 13/10/2020",
+    "lat" : -6.7478367,
+    "lng" : -79.839705,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "HERMITAÑO ORTIZ BURGA MOVIL 30",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_254" : {
+    "bearing" : 99.77698516845703,
+    "distancia" : 2498.890380859375,
+    "fechayhora" : "00:17:49 27/06/2020",
+    "lat" : -6.8052677,
+    "lng" : -79.8275538,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Darwin Malca Albuhar MOVIL 04",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_261" : {
+    "bearing" : -124.01830291748047,
+    "distancia" : 8.816214561462402,
+    "fechayhora" : "16:53:27 14/08/2020",
+    "lat" : -6.7602946,
+    "lng" : -79.8585994,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Ronald Véliz Móvil 07",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_262" : {
+    "bearing" : 34.35835266113281,
+    "distancia" : 4.916446685791016,
+    "fechayhora" : "19:39:59 14/10/2020",
+    "lat" : -6.7849005,
+    "lng" : -79.8438735,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "FRANCISCO ORDINOLA NAVARRO MOVIL #150",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_264" : {
+    "bearing" : 153.44351196289062,
+    "distancia" : 0.024726763367652893,
+    "fechayhora" : "02:51:11 14/10/2020",
+    "lat" : -6.7701416,
+    "lng" : -79.8291866,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "TAXI IMPERIAL Chiclayo",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_266" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "09:40:09 04/08/2020",
+    "lat" : -12.0959876,
+    "lng" : -77.0139229,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Walter Herliss  Andamayo Ludeña ",
+    "versionAndroid" : "Vers: 5.9"
+  },
+  "loc_p_267" : {
+    "bearing" : -2.3837063312530518,
+    "distancia" : 19.137516021728516,
+    "fechayhora" : "19:41:53 14/10/2020",
+    "lat" : -6.7641013,
+    "lng" : -79.8366546,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "NICOLAS BUSTAMANTE ÑOPO MOVIL 13",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_269" : {
+    "bearing" : 74.73969268798828,
+    "distancia" : 2.016796350479126,
+    "fechayhora" : "19:37:42 14/10/2020",
+    "lat" : -6.7621365,
+    "lng" : -79.8479168,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "MICHAEL PEREZ HUANCA MOVIL 57",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_270" : {
+    "bearing" : 28.062837600708008,
+    "distancia" : 6.015543460845947,
+    "fechayhora" : "20:54:36 12/08/2020",
+    "lat" : -6.7854455,
+    "lng" : -79.8659264,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Carlos Guillermo  Ugaz Flores ",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_271" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "14:10:09 24/08/2020",
+    "lat" : -6.7515542,
+    "lng" : -79.8340829,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "WILDER QUIROZ TORRES MOVIL 24",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_272" : {
+    "bearing" : -36.8607063293457,
+    "distancia" : 0.1658644825220108,
+    "fechayhora" : "23:30:20 16/09/2020",
+    "lat" : -6.7513835,
+    "lng" : -79.8341641,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "WILDER QUIROZ TORRES MOVIL 24",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_274" : {
+    "bearing" : 83.73661041259766,
+    "distancia" : 3.5478134155273438,
+    "fechayhora" : "20:54:37 08/09/2020",
+    "lat" : -6.7505993,
+    "lng" : -79.8123845,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "NELINHO TICLE MÓVIL 04",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_275" : {
+    "bearing" : 90,
+    "distancia" : 0.03316451609134674,
+    "fechayhora" : "00:52:11 09/09/2020",
+    "lat" : -6.7702258,
+    "lng" : -79.8451209,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "CARLOS ALVAREZ PINGLO MOVIL 01",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_276" : {
+    "bearing" : -118.56839752197266,
+    "distancia" : 25.854747772216797,
+    "fechayhora" : "18:42:07 13/10/2020",
+    "lat" : -6.7656776,
+    "lng" : -79.8682599,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "CARLOS RODRÍGUEZ PATAZCA MOVIL 23",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_277" : {
+    "bearing" : 156.36033630371094,
+    "distancia" : 6.3136444091796875,
+    "fechayhora" : "17:23:41 08/09/2020",
+    "lat" : -6.749415,
+    "lng" : -79.8361683,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Hermutano ortizBurga",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_278" : {
+    "bearing" : -74.51632690429688,
+    "distancia" : 0.7456491589546204,
+    "fechayhora" : "20:43:12 13/10/2020",
+    "lat" : -6.7550518,
+    "lng" : -79.8287011,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Julio Santamaria Villalobos Movil 38",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_279" : {
+    "bearing" : 177.00723266601562,
+    "distancia" : 87.6406021118164,
+    "fechayhora" : "05:31:41 23/09/2020",
+    "lat" : -6.8755564,
+    "lng" : -79.8173676,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "NELIÑHO TICLE MOVIL 04",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_280" : {
+    "bearing" : -12.390758514404297,
+    "distancia" : 13.858991622924805,
+    "fechayhora" : "19:39:36 14/10/2020",
+    "lat" : -6.7571188,
+    "lng" : -79.857783,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "WILLIAM BURGOS VILLANUEVA MOVIL 05",
+    "versionAndroid" : "Vers: 5.8"
+  },
+  "loc_p_281" : {
+    "bearing" : 5.450623512268066,
+    "distancia" : 14.664145469665527,
+    "fechayhora" : "19:41:51 14/10/2020",
+    "lat" : -6.7679191,
+    "lng" : -79.8327455,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "CARLOS ALVAREZ PINGLO MOVIL 01",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_282" : {
+    "bearing" : 172.325439453125,
+    "distancia" : 9.105684280395508,
+    "fechayhora" : "19:41:50 14/10/2020",
+    "lat" : -6.7714549,
+    "lng" : -79.8361407,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "ULISES MONTENEGRO MOVIL 46",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_284" : {
+    "bearing" : -16.031890869140625,
+    "distancia" : 3.843156337738037,
+    "fechayhora" : "00:05:13 16/09/2020",
+    "lat" : -6.7201357,
+    "lng" : -79.7703757,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "kenyi joselito lopez cabrejos",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_285" : {
+    "bearing" : -10.976935386657715,
+    "distancia" : 0.7547597885131836,
+    "fechayhora" : "22:40:15 10/10/2020",
+    "lat" : -6.757404,
+    "lng" : -79.8477443,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "LUIS REVILLA BECERRA MOVIL 29",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_286" : {
+    "bearing" : -13.455799102783203,
+    "distancia" : 14.157038688659668,
+    "fechayhora" : "18:26:43 14/10/2020",
+    "lat" : -6.7802111,
+    "lng" : -79.8495015,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "EDER BARRETO VERA MOVIL 47",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_287" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "20:26:24 28/09/2020",
+    "lat" : -6.729649,
+    "lng" : -79.6016024,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Denys Sandoval Móvil 88",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_289" : {
+    "bearing" : 92.49121856689453,
+    "distancia" : 74.80254364013672,
+    "fechayhora" : "06:02:31 07/10/2020",
+    "lat" : -6.7628563,
+    "lng" : -79.8636512,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Palomino celiz Elmer móvil 22",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_291" : {
+    "bearing" : 0,
+    "distancia" : 0,
+    "fechayhora" : "19:41:47 14/10/2020",
+    "lat" : -6.7871646,
+    "lng" : -79.8427463,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "CARLOS ENEQUE Móvil 42",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_292" : {
+    "bearing" : -108.09595489501953,
+    "distancia" : 4.628540992736816,
+    "fechayhora" : "23:43:27 11/10/2020",
+    "lat" : -6.7948755,
+    "lng" : -79.832204,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "MARTIN HUAMAN SALAZAR  Móvil 12",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_295" : {
+    "bearing" : 7.8505167961120605,
+    "distancia" : 0.3237442672252655,
+    "fechayhora" : "18:15:44 14/10/2020",
+    "lat" : -6.763997,
+    "lng" : -79.8313723,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "nombreChofer" : "Luis Correa Correa Movil 20",
+    "versionAndroid" : "Vers: 6.0"
+  },
+  "loc_p_null" : {
+    "bearing" : -85.8135986328125,
+    "distancia" : 0.4544685482978821,
+    "fechayhora" : "19:41:52 14/10/2020",
+    "lat" : -6.7621446,
+    "lng" : -79.8479098,
+    "metodoEnvioaFirebaseData" : "002-public void onLocationResult->mFusedLocationClient",
+    "versionAndroid" : "Vers: 6.0"
+  }
+}

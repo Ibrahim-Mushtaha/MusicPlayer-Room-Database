@@ -11,7 +11,24 @@
 
     <item android:title="Sort Songs"
         android:id="@+id/sort_as"
-        />
+        >
+
+        <menu>
+            <group>
+            <item
+                android:id="@+id/name"
+                android:title="Name" />
+            <item
+                android:id="@+id/data_added"
+                android:title="Date added" />
+
+            <item
+                android:id="@+id/artist"
+                android:title="Artist" />
+            </group>
+        </menu>
+
+    </item>
 
 
     <item android:title="Scan local songs"

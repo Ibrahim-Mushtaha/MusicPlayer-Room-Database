@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background"
-        tools:context=".ui.fragment.allsong.SongsFragment">
+        tools:context=".ui.fragment.Main.SongsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -41,6 +41,8 @@
             android:id="@+id/list_song"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
             android:layout_marginTop="4sp"
             android:background="@color/background"
             android:visibility="visible"

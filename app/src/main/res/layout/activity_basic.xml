@@ -25,6 +25,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -36,6 +39,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:titleTextColor="@color/colorPrimaryDark" />
+
+            <com.ferfalk.simplesearchview.SimpleSearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                app:backIconTint="@color/colorPrimaryDark"
+                app:hintColor="@color/hinttext"
+                app:iconsTint="@color/hinttext"
+                android:visibility="gone"
+                app:type="bar"/>
+
+            </FrameLayout>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"

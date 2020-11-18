@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.ix.ibrahim7.mediaplayer.R
-import com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.AlbumFragment
-import com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.ArtistsFragment
-import com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.SongsFragment
+import com.ix.ibrahim7.mediaplayer.ui.fragment.Main.AlbumFragment
+import com.ix.ibrahim7.mediaplayer.ui.fragment.Main.ArtistsFragment
+import com.ix.ibrahim7.mediaplayer.ui.fragment.Main.SongsFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.tab_text_1,

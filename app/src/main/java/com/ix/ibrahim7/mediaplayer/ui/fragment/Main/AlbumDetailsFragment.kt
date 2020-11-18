@@ -1,28 +1,29 @@
-package com.ix.ibrahim7.mediaplayer.ui.fragment
+package com.ix.ibrahim7.mediaplayer.ui.fragment.Main
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.GridLayoutManager
 import com.bumptech.glide.Glide
 import com.ix.ibrahim7.mediaplayer.R
 import com.ix.ibrahim7.mediaplayer.adapter.AlbumAdapter
-import com.ix.ibrahim7.mediaplayer.adapter.AlbumAdapterGrid
 import com.ix.ibrahim7.mediaplayer.adapter.SongAdapter
 import com.ix.ibrahim7.mediaplayer.databinding.FragmentAlbumDetailsBinding
 import com.ix.ibrahim7.mediaplayer.model.AlbumModel
 import com.ix.ibrahim7.mediaplayer.model.SongModel
+import com.ix.ibrahim7.mediaplayer.ui.fragment.Main.AlbumDetailsFragmentDirections
 import com.ix.ibrahim7.mediaplayer.ui.viewModel.AlbumArtistViewModel
+import com.ix.ibrahim7.mediaplayer.util.Constant
 import kotlinx.android.synthetic.main.activity_basic.*
 import kotlinx.android.synthetic.main.activity_basic.toolbar
 import kotlinx.android.synthetic.main.fragment_album_details.*
 
 
-class AlbumDetailsFragment : Fragment(), SongAdapter.onClick,AlbumAdapter.onClick {
+class AlbumDetailsFragment : Fragment(), SongAdapter.onClick, AlbumAdapter.onClick {
 
     private lateinit var mBinding: FragmentAlbumDetailsBinding
 
@@ -38,6 +39,7 @@ class AlbumDetailsFragment : Fragment(), SongAdapter.onClick,AlbumAdapter.onClic
         requireArguments().getParcelableArrayList<AlbumModel>("array")
     }
 
+    var array = ArrayList<SongModel>()
     private val type by lazy {
         requireArguments().getInt("type")
     }
@@ -46,8 +48,26 @@ class AlbumDetailsFragment : Fragment(), SongAdapter.onClick,AlbumAdapter.onClic
         SongAdapter(
             requireActivity(),
             ArrayList(),
-            this
-        )
+            object : SongAdapter.onClick {
+                override fun onClickItem(position: Int, type: Int) {
+                    when (type) {
+                        1 -> {
+                            var arr = arrayOfNulls<SongModel>(array.size)
+                            arr = array.toArray(arr)
+
+                            Constant.Move(
+                                findNavController(),
+                                AlbumDetailsFragmentDirections.actionAlbumDetailsFragmentToPlayerFragment(
+                                    position.toString(),
+                                    arr.requireNoNulls()
+                                )
+                            )
+                        }
+                    }
+                }
+
+            }
+        ,0)
     }
 
     private val song_adapter2 by lazy {
@@ -64,6 +84,7 @@ class AlbumDetailsFragment : Fragment(), SongAdapter.onClick,AlbumAdapter.onClic
     ): View? {
         requireActivity().tabs.visibility = View.GONE
         requireActivity().toolbar.visibility = View.GONE
+        requireActivity().searchView.visibility = View.GONE
         mBinding = FragmentAlbumDetailsBinding.inflate(inflater, container, false).apply {
             executePendingBindings()
         }
@@ -80,23 +101,39 @@ class AlbumDetailsFragment : Fragment(), SongAdapter.onClick,AlbumAdapter.onClic
 
 
         if (type == 1) {
-            Glide.with(requireActivity()).load(data!![0].albumArt).error(R.drawable.ic_album_cover).into(imageStore)
+            Constant.getImage(requireContext(),data as ArrayList<SongModel>,0,imageStore)
             list_artist_album.adapter = song_adapter
-            song_adapter.data.addAll(data!!)
+            song_adapter.data!!.clear()
+            song_adapter.data!!.addAll(data!!)
+            array.addAll(data!!)
+            Log.e("eee song", "song")
             song_adapter.notifyDataSetChanged()
         } else {
-            Glide.with(requireActivity()).load(data_album!![0].coverArt).error(R.drawable.ic_album_cover).into(imageStore)
+            Glide.with(requireActivity()).load(data_album!![0].coverArt)
+                .error(R.drawable.ic_album_cover).into(imageStore)
             list_artist_album.adapter = song_adapter2
+            Log.e("eee album", "album")
+            song_adapter2.data.clear()
             song_adapter2.data.addAll(data_album!!)
             song_adapter2.notifyDataSetChanged()
         }
-
-
     }
 
     override fun onClickItem(position: Int, type: Int) {
+        when(type) {
+            1 -> {
+                val bundle = Bundle().apply {
+                    putInt(Constant.TYPE,1)
+                    putParcelableArrayList(
+                        Constant.ARRAY,
+                        song_adapter2.data.toMutableList()[position].albumSongs
+                    )
+                }
+                findNavController().navigate(R.id.action_albumDetailsFragment_to_allListFragment,bundle)
 
-    }
+                }
+        }
+        }
 
 
 }

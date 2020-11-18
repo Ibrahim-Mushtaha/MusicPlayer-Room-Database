@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragment.allsong.ArtistsFragment">
+        tools:context=".ui.fragment.Main.ArtistsFragment">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_artist"
             android:layout_width="match_parent"
@@ -18,6 +18,8 @@
             android:layout_marginTop="4sp"
             android:background="@color/background"
             android:visibility="visible"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
             tools:itemCount="12"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"

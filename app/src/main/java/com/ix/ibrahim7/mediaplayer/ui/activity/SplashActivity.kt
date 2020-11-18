@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -11,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.ix.ibrahim7.mediaplayer.R
 import com.ix.ibrahim7.mediaplayer.databinding.ActivitySplashBinding
+import com.ix.ibrahim7.mediaplayer.service.MusicService
 import com.ix.ibrahim7.mediaplayer.ui.viewModel.SplashState
 import com.ix.ibrahim7.mediaplayer.ui.viewModel.SplashViewModel
 import kotlinx.android.synthetic.main.activity_splash.*
@@ -42,7 +44,7 @@ class SplashActivity : AppCompatActivity() {
             }
         })
 
-        val a: Animation = AnimationUtils.loadAnimation(this, R.anim.slide_in_left)
+        val a: Animation = AnimationUtils.loadAnimation(this, R.anim.slide_up)
         a.reset()
 
         splash_container.clearAnimation()

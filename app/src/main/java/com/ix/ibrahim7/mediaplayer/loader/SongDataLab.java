@@ -8,7 +8,6 @@ import android.net.Uri;
 import android.provider.MediaStore;
 
 import com.ix.ibrahim7.mediaplayer.database.SongCursorWrapper;
-import com.ix.ibrahim7.mediaplayer.database.SongDbHelper;
 import com.ix.ibrahim7.mediaplayer.model.AlbumModel;
 import com.ix.ibrahim7.mediaplayer.model.ArtistModel;
 import com.ix.ibrahim7.mediaplayer.model.SongModel;
@@ -32,7 +31,6 @@ public class SongDataLab {
 
     private SongDataLab(Context context) {
         mContext = context.getApplicationContext();
-        mDatabase = new SongDbHelper(mContext).getWritableDatabase();
         songs = querySongs();
     }
 

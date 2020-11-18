@@ -3,12 +3,16 @@ package com.ix.ibrahim7.mediaplayer.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import kotlinx.android.parcel.Parcelize;
 
 
+@Entity(tableName = "task_table")
 @Parcelize
 public class SongModel implements Parcelable {
-
+    @PrimaryKey
     private int id;
     private int trackNumber;
     private int year;

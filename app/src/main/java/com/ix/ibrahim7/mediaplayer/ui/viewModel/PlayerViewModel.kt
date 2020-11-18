@@ -11,6 +11,7 @@ import androidx.lifecycle.MutableLiveData
 import com.ix.ibrahim7.mediaplayer.R
 import com.ix.ibrahim7.mediaplayer.model.MusicFile
 import com.ix.ibrahim7.mediaplayer.model.SongModel
+import com.ix.ibrahim7.mediaplayer.repository.SongRepository
 import com.ix.ibrahim7.mediaplayer.util.Constant
 import kotlinx.android.synthetic.main.fragment_player.*
 import kotlinx.coroutines.*
@@ -26,10 +27,20 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     val dataPositionLiveData = MutableLiveData<Int>()
     val dataMediaPlayerLiveData = MutableLiveData<MediaPlayer>()
 
+    val repository= SongRepository(application)
+
     private var viewModelJob = Job()
     private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)
 
     lateinit var mediaPlayer: MediaPlayer
+
+
+
+
+
+    fun addToCurrentPlay(arrayList: MutableList<SongModel>, position: Int)= uiScope.launch {
+        repository.insertSong(arrayList[position])
+    }
 
 
     fun startSong(arrayList: MutableList<SongModel>, position: Int) {
@@ -41,6 +52,7 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
                 mediaPlayer.start();
                 dataMediaPlayerLiveData.postValue(mediaPlayer)
                 dataPositionLiveData.postValue(position)
+                repository.insertSong(arrayList[position])
             }catch (e: Exception){
                 Log.e("eee catch",e.message.toString())
             }
@@ -70,6 +82,7 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
             mediaPlayer.start();
             dataPositionLiveData.postValue(position)
             dataMediaPlayerLiveData.postValue(mediaPlayer)
+            repository.insertSong(arrayList[position])
         }
     }
 

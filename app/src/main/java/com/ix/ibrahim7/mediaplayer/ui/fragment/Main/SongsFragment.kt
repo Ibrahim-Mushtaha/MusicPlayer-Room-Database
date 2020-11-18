@@ -1,22 +1,25 @@
-package com.ix.ibrahim7.mediaplayer.ui.fragment.allsong
+package com.ix.ibrahim7.mediaplayer.ui.fragment.Main
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import android.widget.PopupMenu
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.snackbar.Snackbar
 import com.ix.ibrahim7.mediaplayer.R
 import com.ix.ibrahim7.mediaplayer.adapter.SongAdapter
 import com.ix.ibrahim7.mediaplayer.databinding.FragmentSongsBinding
 import com.ix.ibrahim7.mediaplayer.model.SongModel
-import com.ix.ibrahim7.mediaplayer.ui.fragment.MainFragmentDirections
+import com.ix.ibrahim7.mediaplayer.ui.fragment.Home.MainFragmentDirections
 import com.ix.ibrahim7.mediaplayer.ui.viewModel.SongViewModel
+import com.ix.ibrahim7.mediaplayer.util.Constant
 import kotlinx.android.synthetic.main.fragment_songs.*
+import timber.log.Timber
 
 class SongsFragment : Fragment(), SongAdapter.onClick  {
 
@@ -32,7 +35,7 @@ class SongsFragment : Fragment(), SongAdapter.onClick  {
             requireActivity(),
             ArrayList(),
             this
-        )
+       ,1 )
     }
 
 
@@ -58,18 +61,25 @@ class SongsFragment : Fragment(), SongAdapter.onClick  {
             array = it
             list_song.apply {
                 adapter = song_adapter
-                song_adapter.data.clear()
-                song_adapter.data.addAll(it)
-               /* song_adapter.data.sortBy {
-                    it.dateAdded
-                }*/
+                song_adapter.data!!.clear()
+                song_adapter.data!!.addAll(it)
+                val type=Constant.getSharePref(requireContext()).getString(Constant.SORTTYPE,"name")
+                song_adapter.data!!.sortBy {song->
+                    if (type.equals("name")) {
+                        song.title
+                    }else if (type.equals("data_added")){
+                        song.data
+                    }else{
+                        song.artistName
+                    }
+                }
                 song_adapter.notifyDataSetChanged()
                 layoutAnimation = AnimationUtils.loadLayoutAnimation(
                     requireContext(),
                     R.anim.recyclerview_layout_animation
                 )
             }
-             Log.e("Eee song",it.toString())
+            Timber.d("${Constant.TAG} $it")
         })
 
 
@@ -82,18 +92,17 @@ class SongsFragment : Fragment(), SongAdapter.onClick  {
                 var arr = arrayOfNulls<SongModel>(array.size)
                 arr = array.toArray(arr)
 
-               /* Log.e("eee song",arr[position]!!.album.toString())
-                Log.e("eee song",arr[position]!!.artist.toString())
-                Log.e("eee song",arr[position]!!.path.toString())
-                Log.e("eee song",arr[position]!!.duration.toString())
-                Log.e("eee song",arr[position]!!.title.toString())
-                Log.e("eee song position",position.toString())*/
-
                 val action = MainFragmentDirections.actionMainFragmentToPlayerFragment(
                     position.toString(),
                     arr.requireNoNulls()
                 )
                 findNavController().navigate(action)
+            }
+
+            2->{
+                viewModel.addTofavorite(song_adapter.data!![position]).also {
+                    Snackbar.make(mBinding.root, "added", Snackbar.LENGTH_SHORT).show()
+                }
             }
         }
     }

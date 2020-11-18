@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -29,6 +30,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".service.MusicService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".receiver.NotificationReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="actionPrevious" />
+                <action android:name="actionNext" />
+                <action android:name="actionPlay" />
+            </intent-filter>
+        </receiver>
+
+
     </application>
 
 </manifest>

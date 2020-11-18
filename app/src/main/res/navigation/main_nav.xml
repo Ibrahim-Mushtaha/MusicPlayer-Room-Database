@@ -7,16 +7,25 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.HomeFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Home.HomeFragment"
         android:label="Library"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allListFragment"
+            app:destination="@id/allListFragment" />
     </fragment>
     <fragment
         android:id="@+id/playerFragment"
-        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.PlayerFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Home.PlayerFragment"
         tools:layout="@layout/fragment_player">
         <argument
             android:name="postion"
@@ -30,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.MainFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Home.MainFragment"
         android:label="All Songs"
         tools:layout="@layout/fragment_main">
         <action
@@ -39,25 +48,54 @@
         <action
             android:id="@+id/action_mainFragment_to_albumDetailsFragment"
             app:destination="@id/albumDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_allListFragment"
+            app:destination="@id/allListFragment" />
     </fragment>
     <fragment
         android:id="@+id/albumFragment"
-        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.AlbumFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Main.AlbumFragment"
         android:label="fragment_album"
         tools:layout="@layout/fragment_album" />
     <fragment
         android:id="@+id/songsFragment"
-        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.SongsFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Main.SongsFragment"
         android:label="fragment_songs"
         tools:layout="@layout/fragment_songs" />
     <fragment
         android:id="@+id/artistsFragment"
-        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.allsong.ArtistsFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Main.ArtistsFragment"
         android:label="fragment_artists"
         tools:layout="@layout/fragment_artists" />
     <fragment
         android:id="@+id/albumDetailsFragment"
-        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.AlbumDetailsFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Main.AlbumDetailsFragment"
         android:label="fragment_album_details"
-        tools:layout="@layout/fragment_album_details" />
+        tools:layout="@layout/fragment_album_details" >
+        <action
+            android:id="@+id/action_albumDetailsFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <action
+            android:id="@+id/action_albumDetailsFragment_to_allListFragment"
+            app:destination="@id/allListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Home.SettingsFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Home.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/allListFragment"
+        android:name="com.ix.ibrahim7.mediaplayer.ui.fragment.Home.AllListFragment"
+        android:label="fragment_all_list"
+        tools:layout="@layout/fragment_all_list" >
+        <action
+            android:id="@+id/action_allListFragment_to_playerFragment2"
+            app:destination="@id/playerFragment" />
+    </fragment>
 </navigation>

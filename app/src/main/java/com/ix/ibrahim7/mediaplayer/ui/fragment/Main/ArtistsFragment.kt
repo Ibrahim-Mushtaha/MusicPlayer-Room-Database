@@ -1,4 +1,4 @@
-package com.ix.ibrahim7.mediaplayer.ui.fragment.allsong
+package com.ix.ibrahim7.mediaplayer.ui.fragment.Main
 
 import android.os.Bundle
 import android.util.Log
@@ -12,14 +12,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.ix.ibrahim7.mediaplayer.R
 import com.ix.ibrahim7.mediaplayer.adapter.ArtistAdapter
-import com.ix.ibrahim7.mediaplayer.adapter.SongAdapter
 import com.ix.ibrahim7.mediaplayer.databinding.FragmentArtistsBinding
 import com.ix.ibrahim7.mediaplayer.model.ArtistModel
-import com.ix.ibrahim7.mediaplayer.model.SongModel
 import com.ix.ibrahim7.mediaplayer.ui.viewModel.ArtistViewModel
-import com.ix.ibrahim7.mediaplayer.ui.viewModel.SongViewModel
+import com.ix.ibrahim7.mediaplayer.util.Constant
 import kotlinx.android.synthetic.main.fragment_artists.*
-import kotlinx.android.synthetic.main.fragment_songs.*
 
 
 class ArtistsFragment : Fragment(),ArtistAdapter.onClick {
@@ -79,7 +76,7 @@ class ArtistsFragment : Fragment(),ArtistAdapter.onClick {
          1-> {
              val bundle = Bundle().apply {
                  putParcelableArrayList(
-                     "array",
+                     Constant.ARRAY,
                      artist_adapter.data[position].albums
                  )
                  putInt("type",0)

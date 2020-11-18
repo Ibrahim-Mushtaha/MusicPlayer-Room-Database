@@ -1,4 +1,4 @@
-package com.ix.ibrahim7.mediaplayer.ui.fragment.allsong
+package com.ix.ibrahim7.mediaplayer.ui.fragment.Main
 
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +14,7 @@ import com.ix.ibrahim7.mediaplayer.R
 import com.ix.ibrahim7.mediaplayer.adapter.AlbumAdapterGrid
 import com.ix.ibrahim7.mediaplayer.databinding.FragmentAlbumBinding
 import com.ix.ibrahim7.mediaplayer.ui.viewModel.AlbumViewModel
+import com.ix.ibrahim7.mediaplayer.util.Constant
 import kotlinx.android.synthetic.main.fragment_album.*
 
 class AlbumFragment : Fragment(), AlbumAdapterGrid.onClick {
@@ -73,7 +74,7 @@ class AlbumFragment : Fragment(), AlbumAdapterGrid.onClick {
                     Log.e("eee album",it.albumId.toString())
                 }
                 val bundle = Bundle().apply {
-                    putParcelableArrayList("array",
+                    putParcelableArrayList(Constant.ARRAY,
                         album_adapter.data[position].albumSongs
                     )
                     putInt("type",1)
