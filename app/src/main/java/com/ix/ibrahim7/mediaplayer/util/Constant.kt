@@ -48,8 +48,6 @@ object Constant {
     fun getSharePref(context: Context) =
         context.getSharedPreferences("Share", Activity.MODE_PRIVATE)
 
-    fun editor(context: Context) = getSharePref(context).edit()
-
     lateinit var dialog: Dialog
     fun showDialog(activity: Activity) {
         dialog = Dialog(activity).apply {
@@ -174,11 +172,6 @@ object Constant {
     private fun deleteFile(context: Context,position: Int, view: View, song: SongModel) {
         val file = File(song.data)
         delete(context, file)
-        /*musicAdapter.data.removeAt(position)
-        musicAdapter.notifyItemRemoved(position)
-        musicAdapter.notifyItemRangeChanged(position, musicAdapter.data.size)
-        Snackbar.make(requireView(), "File Deleted", Snackbar.LENGTH_LONG).show()*/
-
     }
 
      fun onShowPopupMenu(context: Context,view: View, position: Int, song: SongModel) {
